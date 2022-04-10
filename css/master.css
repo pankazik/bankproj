@@ -1,0 +1,47 @@
+
+.movements__row{
+  width: 50%;
+  padding: 1em;
+  background-color: gray;
+  display: flex;
+  border-radius: 1em;
+}
+
+.movements__type{
+  flex: 1;
+  margin: auto;
+  text-align: left;
+  font-size: 1.5em;
+  padding-left: 2em;
+  border-radius: 2em;
+  color: white;
+}
+
+.movements__value{
+  text-align: center;
+  margin:auto;
+  flex: 3;
+  font-size: 1.5em;
+}
+
+.movements__type--deposit{
+  background-color: green;
+}
+.movements__type--withdraw{
+  background-color: red;
+}
+.label{
+  display: flex;
+  padding-bottom: 2em;
+}
+.labelDate{
+  flex: 1;
+}
+.labelBalance{
+  flex: :1;
+  text-align: right;
+}
+
+button{
+  margin-bottom: 1em;
+}
