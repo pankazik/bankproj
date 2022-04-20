@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
+    <nav>
+      <p class="welcome">Log in to start banking !</p>
+      <form class="login" action="index.html" method="post">
+<input type="text" placeholder="user" class="login__input login__input--user">
+<input type="text" placeholder="PIN" maxlength="4" class="login__input login__input--pin">
+<button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+    <div class="app">
+
+
     <div class="label">
       <div class="labelDate">
         <h2>Current balance</h2>
@@ -13,7 +24,7 @@
       </div>
 
 <div class="labelBalance">
-<h2 class='showBalance'>Sum</h2>
+<h2 class='showBalance'></h2>
 </div>
 
     </div>
@@ -22,8 +33,36 @@
     <button type="button" class="withdraws">Withdraws</button>
     <button type="button" class="deposits">Deposits</button>
     </div>
-    <div class="movements">
+    <div class="account">
+      <div class="movements">
 
+      </div>
+      <div class="operations">
+
+        <form class="transfer" action="index.html" method="post">
+          <h3>Transfer money</h3>
+          <label>To: </label><input type="text" placeholder="id" class="transfer--id">
+            <label>Amount: </label><input type="text" name="" placeholder="0" class="transfer--amount">
+            <button class="transfer--submit">Transfer</button>
+
+            <h3>Loan money</h3>
+              <label>Amount: </label><input type="text" name="" placeholder="0" class="loan--amount">
+              <button class="loan--submit">Transfer</button>
+
+              <h3>Delete account</h3>
+              <label>User ID: </label><input type="text" placeholder="id" class="delete--id">
+                <label>User Password: </label><input type="text" name="" placeholder="0" class="delete--pass">
+                <button class="delete--submit">Transfer</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="summary">
+      <button type="button" class="moves--sort">Sort</button>
+      <h2 class="incomeSummary">Income:</h2>
+      <h2 class="outcomeSummary">Outcome:</h2>
+      <h2 class="interesSummary">Interest:</h2>
+    </div>
     </div>
     <script type="text/javascript" src="js/script.js">
 
